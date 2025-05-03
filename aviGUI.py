@@ -42,7 +42,7 @@ def get_audio(base_filename, video_object):
     """Returns the audio track only of a video clip"""
     video_object.audio.write_audiofile(filename=f'output/{base_filename}_audio.wav')
     video_object.audio.write_audiofile(filename=f'output/{base_filename}_audio.mp3')
-
+    print('get audio done')
 def combine_audio_video(video_path, audio_path, og_path):
     """Combines an audio and a video object together"""
     capture = cv2.VideoCapture(og_path) # Stores OG Video into a Capture Window
@@ -79,6 +79,7 @@ def get_frames(video_object, base_filename):
     for index, frame in enumerate(video_object.iter_frames()):
         img = Image.fromarray(frame, 'RGB')
         img.save(os.path.join(directory, f"{index}.png"))
+    print('get frame done')
 
 def sel():
     """Helper function to handle radio button selection"""
