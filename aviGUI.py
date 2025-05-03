@@ -36,7 +36,7 @@ def get_audio_filename_base():
 
 def get_video(base_filename, video_object):
     """Returns the video track only of a video clip"""
-    video_object.write_videofile(filename=f'output\\{base_filename}_video_only.mp4', audio=False)
+    video_object.write_videofile(filename=f'output/{base_filename}_video_only.mp4', audio=False)
 
 def get_audio(base_filename, video_object):
     """Returns the audio track only of a video clip"""
