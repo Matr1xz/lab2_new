@@ -45,6 +45,7 @@ video_clip = VideoFileClip(output_video)
 audio_clip = AudioFileClip(output_audio).set_duration(video_clip.duration)
 final_clip = video_clip.set_audio(audio_clip)
 final_clip.write_videofile(final_output, codec="libx264", audio_codec="aac")
-
+os.remove(output_video)
+os.remove(output_audio)
 print(f"Final video with audio saved to {final_output}")
 
