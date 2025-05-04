@@ -4,7 +4,7 @@ from moviepy.editor import VideoFileClip, AudioFileClip, CompositeVideoClip
 import wave
 import struct
 import random
-
+import os
 # --- Cấu hình ---
 width, height = 640, 480
 fps = 30
