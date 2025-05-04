@@ -8,7 +8,7 @@ import os
 # --- Cấu hình ---
 width, height = 640, 480
 fps = 30
-duration_sec = 3
+duration_sec = 1
 output_video = "random_video.avi"
 output_audio = "random_audio.wav"
 final_output = "final_video_with_audio.mp4"
